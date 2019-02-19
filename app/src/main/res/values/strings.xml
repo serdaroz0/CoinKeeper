@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CoinKeeper</string>
+    <string name="news">News</string>
+    <string name="error_404">Not Found</string>
+    <string name="error_500">Server Is Not Responding</string>
+    <string name="error_default">Data Not Found</string>
+    <string name="error_network">Check Your Internet Connection!</string>
+    <string name="categories">Categories :</string>
+    <string name="check_on_web">Check on web</string>
+    <string name="body_news">%s. \n\n Date : %s \n\n Source : %s</string>
+    <string name="close">Close</string>
+    <string name="dolar_format">$ %f</string>
+    <string name="crypto_currency">Crypto Currency</string>
+    <string name="loading">Loading</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="menu">Menu</string>
+    <string name="coins">Coins</string>
+    <string name="exchange_office">Exchange Office</string>
+    <string name="my_favorites">My Favorites</string>
+    <string name="my_account">My Account</string>
+</resources>

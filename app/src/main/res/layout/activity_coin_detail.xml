@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CoinDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_default">
+
+        <include layout="@layout/back_button" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_investor" />
+
+        <TextView
+            android:id="@+id/tvCoinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin_smx" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPercentChange1h"
+        style="@style/CoinDetail" />
+
+    <TextView
+        android:id="@+id/tvPercentChange24h"
+        style="@style/CoinDetail" />
+
+    <TextView
+        android:id="@+id/tvPercentChange7d"
+        style="@style/CoinDetail" />
+
+    <TextView
+        android:id="@+id/tvCirculatingSupply"
+        style="@style/CoinDetail" />
+
+    <TextView
+        android:id="@+id/tvMaxSupply"
+        style="@style/CoinDetail" />
+
+
+</LinearLayout>

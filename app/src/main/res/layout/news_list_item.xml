@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cvNews"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin_smx"
+        android:background="@color/titleColor"
+        app:cardCornerRadius="@dimen/default_corner_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitleNews"
+                style="@style/TitleStyleNews"
+                android:textColor="@color/text_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding" />
+
+            <TextView
+                android:id="@+id/tvBodyNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:padding="@dimen/default_padding_2x"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_size" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

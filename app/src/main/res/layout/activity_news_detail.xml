@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:orientation="vertical"
+    tools:context=".activities.NewsDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivImageNews"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <include layout="@layout/back_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivImageNews"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvTitleNews"
+                        style="@style/TitleStyleNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/tvBodyNews"
+                        style="@style/BodyStyleNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/default_padding_smx"
+                    android:text="@string/categories"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_4x" />
+
+                <TextView
+                    android:id="@+id/tvCategoryNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_padding_smx"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/font_size_4x" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUrlNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_active_selector"
+                android:padding="@dimen/default_padding_smx"
+                android:text="@string/check_on_web"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/font_size_4x" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
