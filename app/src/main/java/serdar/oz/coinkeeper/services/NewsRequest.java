@@ -16,6 +16,7 @@ public class NewsRequest {
             }
         }
         return retrofit;
+        /*Test*/
     }
 
 
