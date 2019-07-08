@@ -11,7 +11,7 @@ import serdar.oz.coinkeeper.models.icon.IconModel;
 import serdar.oz.coinkeeper.models.news.NewsModel;
 
 public interface ServicesApi {
-    @GET("news/")
+    @GET("news/")Welcome
     Call<ArrayList<NewsModel>> getNews();
 
     @GET("latest")
